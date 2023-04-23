@@ -1,6 +1,6 @@
 {
   "name": "strapi-auto-uuid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is the description of the plugin.",
   "strapi": {
     "name": "field-uuid",
@@ -10,9 +10,6 @@
   "dependencies": {
     "uuid": "^9.0.0"
   },
-  "files": [
-    "dist"
-  ],
   "devDependencies": {
     "@strapi/design-system": "^1.6.6",
     "@strapi/helper-plugin": "^4.6.0",
