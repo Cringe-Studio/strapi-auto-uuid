@@ -48,7 +48,7 @@
   "repository": {
     "url": "https://github.com/Cringe-Studio/strapi-auto-uuid",
     "type": "git",
-    "directory": "./"
+    "directory": "."
   },
   "bugs": {
     "url": "https://github.com/Cringe-Studio/strapi-auto-uuid/issues",
