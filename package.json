@@ -10,6 +10,9 @@
   "dependencies": {
     "uuid": "^9.0.0"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@strapi/design-system": "^1.6.6",
     "@strapi/helper-plugin": "^4.6.0",
