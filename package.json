@@ -1,0 +1,73 @@
+{
+  "name": "strapi-auto-uuid",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "field-uuid",
+    "description": "Description of uuid plugin",
+    "kind": "plugin"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@strapi/design-system": "^1.6.6",
+    "@strapi/helper-plugin": "^4.6.0",
+    "@strapi/icons": "^1.6.3",
+    "prop-types": "^15.7.2",
+    "react-intl": "^6.4.1",
+    "@strapi/typescript-utils": "^4.6.0",
+    "@types/react": "^17.0.53",
+    "@types/react-dom": "^17.0.18",
+    "@types/styled-components": "^5.1.26",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.6",
+    "typescript": "4.6.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.6"
+  },
+  "homepage": "https://github.com/Cringe-Studio/strapi-auto-uuid",
+  "readme": "https://github.com/Cringe-Studio/strapi-auto-uuid#readme",
+  "maintainers": [
+    {
+      "name": "Cringe Studio",
+      "email": "tech@cringe.studio",
+      "url": "https://github.com/Cringe-Studio"
+    }
+  ],
+  "author": {
+    "name": "Stefano Cerelli ",
+    "email": "stefano@cringe.studio",
+    "url": "https://github.com/scerelli"
+  },
+  "repository": {
+    "url": "https://github.com/Cringe-Studio/strapi-auto-uuid",
+    "type": "git",
+    "directory": "./"
+  },
+  "bugs": {
+    "url": "https://github.com/Cringe-Studio/strapi-auto-uuid/issues",
+    "email": "tech@cringe.studio"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "branches": [
+      "latest"
+    ]
+  },
+  "engines": {
+    "node": ">=14.19.1 <=17.x.x",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "develop": "tsc -p tsconfig.server.json -w",
+    "build": "tsc -p tsconfig.server.json"
+  },
+  "license": "MIT"
+}
