@@ -63,15 +63,17 @@ const Input = ({
 }) => {
   const { formatMessage } = useIntl()
   const [invalidUUID, setInvalidUUID] = useState<boolean>(false)
-  console.log(props)
+  const ref = useRef("")
+
   useEffect(() => {
     if(!initialValue) {
       const newUUID = v4()
       onChange({ target: { value: newUUID, name }})
     }
-  }, [])
 
-  useEffect(() => {
+    if(initialValue && initialValue !== ref.current)
+      ref.current = initialValue
+
     const validateValue = validate(initialValue)
     if(!validateValue) return setInvalidUUID(true)
     setInvalidUUID(false)
@@ -98,11 +100,13 @@ const Input = ({
             <FieldLabel>{formatMessage(intlLabel)}</FieldLabel>
           </Flex>
           <FieldInput
+            onChange={onChange}
             labelAction={labelAction}
             placeholder={placeholder}
             disabled={disabled}
             required={required}
             value={initialValue}
+            ref={ref}
             readOnly
             endAction={
               <FieldActionWrapper

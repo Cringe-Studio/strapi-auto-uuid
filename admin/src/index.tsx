@@ -47,18 +47,6 @@ export default {
                 },
               },
               {
-                name: 'options.disableEditing',
-                type: 'checkbox',
-                intlLabel: {
-                  id: 'form.attribute.item.disableEditing',
-                  defaultMessage: 'Disable editing',
-                },
-                description: {
-                  id: 'form.attribute.item.disableEditing.description',
-                  defaultMessage: 'This field will not be editable and it will be managed automatically',
-                },
-              },
-              {
                 name: 'private',
                 type: 'checkbox',
                 intlLabel: {
