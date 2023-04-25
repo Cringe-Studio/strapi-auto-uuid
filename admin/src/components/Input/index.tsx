@@ -46,7 +46,6 @@ const Input = ({
   labelAction,
   name,
   onChange,
-  required,
   value: initialValue = "",
   ...props
 }: {
@@ -58,7 +57,6 @@ const Input = ({
   labelAction: string
   name: string
   onChange(v: any): void
-  required: boolean
   value: string
 }) => {
   const { formatMessage } = useIntl()
@@ -104,7 +102,7 @@ const Input = ({
             labelAction={labelAction}
             placeholder={placeholder}
             disabled={disabled}
-            required={required}
+            required
             value={initialValue}
             ref={ref}
             readOnly
