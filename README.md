@@ -1,3 +1,5 @@
+![Tests](https://github.com/Cringe-Studio/strapi-auto-uuid/actions/workflows/main.yml/badge.svg)
+
 # Strapi Auto UUID Plugin
 
 The Strapi Auto UUID Plugin is a custom plugin for Strapi that automatically generates a unique UUID for your content.
