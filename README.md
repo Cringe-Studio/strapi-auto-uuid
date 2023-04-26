@@ -6,7 +6,7 @@ The Strapi Auto UUID Plugin is a custom plugin for Strapi that automatically gen
 
 To install the Strapi Auto UUID Plugin, simply run the following command:
 
-``
+```
 pnpm add strapi-auto-uuid
 or
 npm install strapi-auto-uuid
@@ -48,4 +48,4 @@ module.exports = {
 That's it! With the Strapi Auto UUID Plugin, you can easily add UUIDs to your Strapi content without having to worry about generating them yourself.
 
 
-Note: If you are currently using the `@bn-digital/strapi-plugin-field-uuid` plugin, the `strapi-auto-uuid` plugin can be used as a replacement without requiring any code changes. Simply install `strapi-auto-uuid`  and remove `@bn-digital/strapi-plugin-field-uuid`. The Strapi Auto UUID Plugin provides the same functionality as the `@bn-digital/strapi-plugin-field-uuid` plugin and is , plus support uuid generation automatically via api or graphql and is actively maintained.
+Note: If you are currently using the `@bn-digital/strapi-plugin-field-uuid` plugin, the `strapi-auto-uuid` plugin can be used as a replacement without requiring any code changes. Simply install `strapi-auto-uuid`  and remove `@bn-digital/strapi-plugin-field-uuid`. The Strapi Auto UUID Plugin provides the same functionality as the `@bn-digital/strapi-plugin-field-uuid` plugin, in addition it supports uuid generation automatically via api or graphql and is actively maintained.
