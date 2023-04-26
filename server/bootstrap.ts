@@ -24,9 +24,12 @@ export default ({ strapi }: { strapi: Strapi }) => {
   }, {}) as { [key: string]: string[] }
 
   const modelsToSubscribe = Object.keys(models)
+
   strapi.db.lifecycles.subscribe((event) => {
+    console.log(event)
     if (event.action === 'beforeCreate' && modelsToSubscribe.includes(event.model.uid)) {
       models[event.model.uid].forEach((attribute) => {
+        console.log(event.params.data[attribute])
         if(!event.params.data[attribute] || !validate(event.params.data[attribute])) {
           event.params.data[attribute] = v4()
         }

@@ -18,10 +18,9 @@ yarn add strapi-auto-uuid
 
 ## Usage
 
-Once the plugin is installed, you can add a new custom type to your Strapi models, no configuration needed. The custom type uses the Strapi UID structure, ensuring that each UUID generated is unique.
+Once the plugin is installed, you can add a new custom type to your Strapi content types, no configuration needed. The custom type uses the Strapi UID structure, ensuring that each UUID generated is unique.
 
 You can create new records via the Admin panel, API or GraphQL, and the plugin will automatically generate a UUID for each new record created.
-
 
 ## Example
 
