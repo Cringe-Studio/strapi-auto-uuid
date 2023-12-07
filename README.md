@@ -29,7 +29,10 @@ You can create new records via the Admin panel, API or GraphQL, and the plugin w
 Here's an example of how to use the Strapi Auto UUID Plugin:
 
 1. Install the plugin using `npm install strapi-auto-uuid`
-2. Create a new Strapi model with the custom type `autoUUID`, like this:
+2. Find the `schema.json` file for the model you want to add the plugin to. You can find this in `src\api\<modelName>\content-types\<modelName>\schema.json` i.e.
+
+      ![sample json schema file location](<Screen Shot 2023-12-07 at 12.27.39 AM.png> "Schema file location") 
+3. Add the custom type AutoUUID as shown below. (TIP: You can change "uuid" to whatever name you like.)
 
 ```javascript
 module.exports = {
@@ -46,7 +49,7 @@ module.exports = {
 };
 ```
 
-3. When you create a new record in this model via the Strapi API or GraphQL, the plugin will automatically generate a unique UUID for the `uuid` field.
+4. When you create a new record in this model via the Strapi API or GraphQL, the plugin will automatically generate a unique UUID for the `uuid` field.
 
 That's it! With the Strapi Auto UUID Plugin, you can easily add UUIDs to your Strapi content without having to worry about generating them yourself.
 
