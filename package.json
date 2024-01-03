@@ -27,7 +27,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intl": "^6.4.2",
-    "styled-components": "5.3.10",
+    "styled-components": "^5.3.10",
     "ts-jest": "^29.1.0",
     "typescript": "5.0.4"
   },
@@ -35,7 +35,7 @@
     "@strapi/strapi": "^4.9.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "5.3.10"
+    "styled-components": "^5.3.10"
   },
   "homepage": "https://github.com/Cringe-Studio/strapi-auto-uuid",
   "readme": "https://github.com/Cringe-Studio/strapi-auto-uuid#readme",
